@@ -4,7 +4,7 @@ from PIL import Image
 import io
 
 # 中间页面的 URL
-redirect_url = "https://example.com/links.html"
+redirect_url = "https://cfpl24.github.io/links.html"
 
 # 生成包含redirect_url的二维码
 def generate_qr_code(url):
@@ -29,7 +29,7 @@ def generate_qr_code(url):
     return byte_im
 
 # Streamlit 应用程序
-st.title("QR Code Generator")
+st.title("打开手机扫一扫")
 
 # 生成二维码
 qr_image = generate_qr_code(redirect_url)
@@ -39,7 +39,7 @@ st.image(qr_image, caption='Generated QR Code')
 
 # 提供二维码图像的下载链接
 st.download_button(
-    label="Download QR Code",
+    label="保存二维码",
     data=qr_image,
     file_name="qrcode.png",
     mime="image/png"
