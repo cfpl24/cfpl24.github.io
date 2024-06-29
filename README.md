@@ -10,14 +10,14 @@
 ## 安装依赖
 
 确保您已经安装了所需的 Python 库。运行以下命令安装依赖：
-``sh
-pip install streamlit qrcode
+    ```bash
+    pip install streamlit qrcode
 
 ## 运行应用程序
 
 运行以下命令启动 Streamlit 应用程序：
-``sh
-pip install streamlit qrcode
+    ```bash
+    streamlit run app.py
 
 ## 生成二维码
 
